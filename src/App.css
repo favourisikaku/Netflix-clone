@@ -1,0 +1,147 @@
+*{
+  margin: 0;
+  background-color: #111;
+  color: white;
+}
+.nav-header{
+  display: flex;
+  width: 100%;
+  position: fixed;
+  background-color: transparent;
+  justify-content: space-between;
+  z-index: 1;
+  transition: 0.3s ease-in;
+  
+}
+.nav-black{
+  background-color: #111;
+}
+.logo, .avatar{
+  height: 45px;
+  cursor: pointer;
+}
+.logo{
+  background-color: transparent;
+  padding: 10px;
+}
+.avatar{
+  margin-right:20px;
+  margin-top: 10px;
+}
+.banner{
+  height: 370px;
+  background-size: cover;
+  background-position: center center;
+}
+.banner-header{
+  background-color: transparent;
+
+   width: 100%;
+
+}
+.banner-details{
+  padding-top: 70px;
+  margin-left: 50px;
+  width: 80%;
+  height: 100%;
+  background-color: transparent;
+}
+.banner-overview{
+  height: 100px;
+  width: 400px;
+}
+  .banner-bottom{
+     background-color: transparent;
+     height: 70px;
+     margin-top: 30px;
+     filter: blur(20px);
+  background-image: linear-gradient(
+   180deg,
+     rgba(37, 37, 37, 0.61),
+    #111
+  )
+ }
+ .banner-details h1{
+  font-size: 50px;
+ }
+ .banner-details button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+ }
+ .btn-play{
+  background-color: red;
+  margin-right: 15px;
+  transition: 0.3s ease-in;
+ }
+ .btn-play:hover{
+  background-color: #111;
+ }
+ .btn-list{
+  background-color: #111;
+  transition: 0.3s ease-in;
+ }
+ .btn-list:hover{
+  background-color: rgb(137, 128, 128);
+  color: white;
+ }
+ .banner-details p{
+  margin-top: 10px;
+ }
+.banner-header p, button, h1 {
+  background-color: transparent;
+}
+.title{
+  padding: 20px;
+}
+.image-header{
+  display: flex;
+  overflow-x: scroll; 
+}
+.image-header::-webkit-scrollbar{
+  overflow-x: hidden;
+}
+.movie-image{
+  width: 100%;
+  height: 200px;
+  margin-left: 12px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: 0.3s ease-in
+}
+.movie-image:hover{
+  transform: scale(1.05)
+}
+@media (max-width: 426px)  {
+  .logo, .avatar{
+    height: 30px;
+  }
+  .banner{
+   height: 285px;
+  }
+  .banner-details{
+    padding-top: 30px;
+    margin-left: 30px;
+  }
+  .banner-details h1{
+    margin-top: 15px;
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .banner-overview{
+    width: 100%;
+  }
+  .banner-details button{
+    padding: 8px 15px;
+  }
+  .banner-bottom{
+    margin-top: 0px;
+    height: 50px;
+  }
+  .title{
+    font-size: 20px;
+  }
+  .movie-image{
+    height: 100px;
+  }
+}
